@@ -7,5 +7,6 @@
   tasks:
     - name: copy archive
       copy:
-        src: "/var/lib/jenkins/workspacenew-ganesha/mavenapp-1.0-SNAPSHOT.jar"
+        src: "/var/lib/jenkins/workspace/new-ganesha/target/mavenapp-1.0-SNAPSHOT.jar"
         dest: "/home/mdganesha24/tar.jar"
+
