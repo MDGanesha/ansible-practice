@@ -1,0 +1,11 @@
+---
+- name: Archetype ansible
+  hosts: localhost
+  become: true
+  become_user: mdganesha24
+  become_method: sudo
+  tasks:
+    - name: copy archive
+      copy:
+        src: "/var/lib/jenkins/workspacenew-ganesha/mavenapp-1.0-SNAPSHOT.jar"
+        dest: "/home/mdganesha24/tar.jar"
